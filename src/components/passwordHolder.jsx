@@ -8,7 +8,10 @@ export function PasswordHolder({ password, setPassword, value, numbers, symbols 
 
     }
     return (
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
+        <motion.div
+        initial={{x:0, y:400, opacity:0}}
+        animate={{x:0, y:0, opacity:1}}
+        className="flex flex-col sm:flex-row justify-center items-center gap-10">
             < div className="text-2xl font-bold itallic underline text-center" >
                 {password}
             </div >
@@ -22,7 +25,7 @@ export function PasswordHolder({ password, setPassword, value, numbers, symbols 
                 onClick={CopyClipBoard__}
                 className="px-4 p-2 m-2 text-2xl font-semibold text-neutral-100 bg-neutral-900 rounded-4xl hover:shadow-xl/30"
             >Copy</motion.button>
-        </div >
+        </motion.div >
     )
 }
 

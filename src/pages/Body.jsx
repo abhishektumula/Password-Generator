@@ -3,9 +3,8 @@ import { motion } from "motion/react";
 export function BodyRoot() {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 600 }}
+      initial={{ opacity: 0, y: -200, }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, ease: "easeOut" }}
       className="flex flex-col p-4 m-4 text-5xl text-neutral-900 gap-6 justify-center items-center"
     >
       <h1 className="text-4xl text-center font-bold">

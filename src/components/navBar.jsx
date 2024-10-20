@@ -7,7 +7,7 @@ export function NavBar() {
     return (
         <div className="w-full flex items-center sm:justify-end justify-center gap-6 m-4 p-4">
             <motion.a
-                whileHover={{ rotate: 180 }}
+                whileHover={{scale:1.15}}
                 transition={{ duration: 0.4 }}
                 href="https://github.com/abhishektumula/Password-Generator" className="hover:scale-110 transition-transform duration-200">
                 <img

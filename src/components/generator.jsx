@@ -41,7 +41,10 @@ export function Generator({ password, setPassword, value, numbers, symbols, setN
   }
 
   return (
-    <div className="flex flex-col sm:flex-row justify-center items-center w-full p-2 m-2 gap-10">
+    <motion.div
+      initial={{x:0, y:400, opacity: 0}}
+      animate={{x:0, y:0, opacity: 1}}
+      className="flex flex-col sm:flex-row justify-center items-center w-full p-2 m-2 gap-10">
       <p>Password size: {value}</p>
 
       <Slider
@@ -62,6 +65,6 @@ export function Generator({ password, setPassword, value, numbers, symbols, setN
       >
         Generate
       </motion.button>
-    </div>
+    </motion.div>
   );
 }
