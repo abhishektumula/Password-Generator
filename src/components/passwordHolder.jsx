@@ -1,18 +1,10 @@
 import { motion } from "motion/react"
-import clipboard from 'clipboardy';
+import copy from "copy-to-clipboard"; 
 
-
-async function CopyClipBoard__(password) {
-    console.log('func')
-    const pass = await clipboard.write(password)
-    console.log('copied successfully')
-
-}
+  
 export function PasswordHolder({ password, setPassword, value, numbers, symbols }) {
     async function CopyClipBoard__() {
-        console.log('func')
-        const pass = await clipboard.write(password)
-        console.log('copied successfully')
+      copy(password); 
 
     }
     return (
