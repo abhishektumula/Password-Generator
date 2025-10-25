@@ -12,7 +12,7 @@ export function PasswordHolder({ password, setPassword, value, numbers, symbols 
         initial={{x:0, y:400, opacity:0}}
         animate={{x:0, y:0, opacity:1}}
         className="flex flex-col sm:flex-row justify-center items-center gap-10">
-            < div className="text-2xl font-bold itallic underline text-center" >
+            <div className="w-full text-lg sm:text-lg md:text-xl font-bold italic overflow-hidden underline text-justify sm:text-center md:text-center break-all md:w-[90%]" >
                 {password}
             </div >
             <motion.button
